@@ -1,0 +1,20 @@
+GODALmic - APK (Android)
+
+ESTRUTURA (a raiz do repositorio deve ficar assim):
+  .github/workflows/build-apk.yml
+  app/
+  build.gradle.kts
+  settings.gradle.kts
+  gradle.properties
+
+PASSOS
+1. No GitHub: + > New repository > nome "godalmic-apk" > Create.
+2. Add file > Upload files. Arraste TUDO que esta dentro desta pasta (inclusive a pasta .github).
+3. Commit changes.
+4. Aba Actions: se o "Build APK" nao aparecer, veja abaixo.
+5. Espere o V verde (3-5 min). Abra a execucao, baixe "GODALmic-apk" em Artifacts.
+6. Dentro do zip baixado esta app-debug.apk. Renomeie para GODALmic.apk.
+
+SE A PASTA .github NAO FOI ENVIADA (aba Actions vazia)
+Actions > "set up a workflow yourself", nome do arquivo: build-apk.yml,
+cole o conteudo de COLAR-NO-GITHUB_build-apk.yml.txt e de Commit.
